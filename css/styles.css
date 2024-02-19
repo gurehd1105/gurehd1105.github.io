@@ -2993,12 +2993,12 @@ textarea.form-control-lg {
   --bs-btn-hover-border-color:  #668EFD;
   --bs-btn-focus-shadow-rgb: 189, 93, 56;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #bd5d38;
-  --bs-btn-active-border-color: #bd5d38;
+  --bs-btn-active-bg: #668EFD;
+  --bs-btn-active-border-color: #668EFD;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #bd5d38;
+  --bs-btn-disabled-color:#668EFD;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #bd5d38;
+  --bs-btn-disabled-border-color: #668EFD;
   --bs-gradient: none;
 }
 
@@ -4358,8 +4358,9 @@ textarea.form-control-lg {
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
   --bs-accordion-active-color: #FA8072;
-  --bs-accordion-active-bg: #f8efeb;
+  --bs-accordion-active-bg: #f8efeb; 
 }
+
 
 .accordion-button {
   position: relative;
@@ -4382,12 +4383,12 @@ textarea.form-control-lg {
   }
 }
 .accordion-button:not(.collapsed) {
-  color: var(--bs-accordion-active-color);
-  background-color: var(--bs-accordion-active-bg);
+  color: #ABC1FC; /* 텍스트 색상 변경 */
+  background-color: #ABC1FC; /* 배경 색상 변경 */
   box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: var(--bs-accordion-btn-active-icon);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   transform: var(--bs-accordion-btn-icon-transform);
 }
 .accordion-button::after {
@@ -4409,11 +4410,12 @@ textarea.form-control-lg {
 .accordion-button:hover {
   z-index: 2;
 }
-.accordion-button:focus {
+.accordion-button:focus { 
+  
   z-index: 3;
   border-color: var(--bs-accordion-btn-focus-border-color);
   outline: 0;
-  box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+  box-shadow: 0 0 0 0.25rem rgba(171, 193, 252, 0.25);
 }
 
 .accordion-header {
